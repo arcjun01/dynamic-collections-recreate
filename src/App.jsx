@@ -5,20 +5,23 @@ import data from "./players"
 
 export default function App() {
   const contentElements = data.map((content) => {
-    return 
-    (<Content 
-      key={content.id}
-      content={content}
-    />)
+    return (
+      <Content 
+        key={content.id}
+        content={content}
+      />
+    )
   })
+
+  return (
+    <>
+      <Header />
+      <main>
+        {contentElements}
+      </main>
+      <Footer/>
+    </>
+  )
+
 }
 
-return (
-  <>
-    <Header />
-    <main>
-      {contentElements}
-    </main>
-    <Footer/>
-  </>
-)
