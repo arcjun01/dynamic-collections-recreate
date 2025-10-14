@@ -1,6 +1,6 @@
 export default function Content(props) {
 
-    const { img, name, position, jersey, teams } = props.content
+    const { img, name, position, jersey, teams } = props.content;
 
     return (
         <div className="playerCard">
@@ -9,7 +9,7 @@ export default function Content(props) {
             <h2>Position: {position}</h2>
             <h2>Number: {jersey}</h2>
             <h2>Teams: {teams}</h2>            
-    
+
         </div>
     )
 }
